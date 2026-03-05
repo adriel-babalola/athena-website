@@ -36,7 +36,7 @@ export default function HeroSection() {
               onClick={() => scrollTo('capabilities')}
               className="px-10 py-4 border border-athena-purple/40 text-athena-purple font-mono text-sm uppercase tracking-widest hover:bg-athena-purple hover:text-white transition-all duration-300 group"
             >
-              GET EARLY ACCESS — IT'S FREE
+              START LEARNING — IT'S FREE
             </button>
           </motion.div>
         </motion.div>
@@ -66,7 +66,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-athena-purple/20 bg-athena-purple/5 mb-8">
               <span className="w-2 h-2 bg-athena-purple animate-pulse" />
               <span className="font-mono text-[10px] uppercase tracking-widest text-athena-purple">
-                Now in Early Access
+                Free · No Credit Card Required
               </span>
             </div>
 
@@ -80,9 +80,9 @@ export default function HeroSection() {
             <p className="text-athena-offwhite/40 text-lg max-w-lg mb-10 leading-relaxed">
               Paste any confusing text, formula, or screenshot —
               <br />
-              Athena finds the perfect YouTube videos that explain it,
+              Athena finds the exact YouTube videos that explain it,
               <br />
-              ranked by difficulty.{' '}
+              ranked from beginner to advanced.{' '}
               <span className="text-athena-offwhite/70 font-medium">Powered by Gemini AI.</span>
             </p>
 
@@ -92,7 +92,7 @@ export default function HeroSection() {
                 className="inline-flex items-center gap-2 bg-athena-purple text-white font-mono text-sm uppercase tracking-widest px-8 py-4 hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-                <span className="relative z-10">TRY ATHENA FREE</span>
+                <span className="relative z-10">GET STARTED FREE</span>
                 <span className="relative z-10">→</span>
               </Link>
               <button

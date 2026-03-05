@@ -17,10 +17,10 @@ export default function FinalCTA() {
         className="max-w-2xl mx-auto text-center relative z-10"
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6">
-          Ready to <span className="text-athena-purple italic">understand?</span>
+          Stop searching. <br /> <span className="text-athena-purple italic">Start understanding.</span>
         </h2>
         <p className="text-athena-offwhite/40 text-lg mb-10 max-w-md mx-auto">
-          Stop wasting time searching. Let Athena find the perfect videos for you.
+          Paste what confuses you. Get the exact videos that explain it. Free, no credit card.
         </p>
 
         <Link
@@ -28,7 +28,7 @@ export default function FinalCTA() {
           className="inline-block bg-athena-purple text-white font-mono text-sm uppercase tracking-widest px-10 py-4 hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 group relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-          <span className="relative z-10">LAUNCH ATHENA — IT'S FREE</span>
+          <span className="relative z-10">START LEARNING FREE</span>
         </Link>
       </motion.div>
     </section>

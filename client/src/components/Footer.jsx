@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-athena-offwhite/30 max-w-xs leading-relaxed">
-              AI-powered study companion that finds the perfect YouTube videos to explain anything you're struggling with.
+              AI-powered study companion. Paste any confusing text or image — Athena finds the perfect YouTube videos, ranked by difficulty.
             </p>
           </div>
 
@@ -55,10 +55,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-athena-offwhite/15">API (Coming Soon)</span>
+                <Link to="/login" className="hover:text-athena-purple transition-colors">
+                  Log In
+                </Link>
               </li>
               <li>
-                <span className="text-athena-offwhite/15">Changelog</span>
+                <span className="text-athena-offwhite/15">API (Coming Soon)</span>
               </li>
             </ul>
           </div>

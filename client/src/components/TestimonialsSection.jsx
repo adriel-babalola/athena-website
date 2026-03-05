@@ -2,17 +2,17 @@ import { motion } from 'motion/react';
 
 const testimonials = [
   {
-    quote: "I used to spend 20 minutes searching YouTube for the right video. Athena does it in seconds.",
+    quote: "I pasted a paragraph from my biochem textbook and Athena gave me three perfectly ranked videos in under 10 seconds. It's become part of every study session.",
     name: 'Sarah K.',
     role: 'Pre-Med Student',
   },
   {
-    quote: "The difficulty ranking is a game changer. I always find videos at exactly my level.",
+    quote: "The beginner-to-advanced ranking is what got me. I stopped watching videos that were either too basic or went straight over my head.",
     name: 'James T.',
     role: 'CS Undergraduate',
   },
   {
-    quote: "Being able to paste a screenshot of my textbook and get instant video results is incredible.",
+    quote: "I screenshot my lecture slides whenever I get lost and Athena figures out exactly what I need to watch. I don't know how I studied without it.",
     name: 'Maya R.',
     role: 'Engineering Student',
   },

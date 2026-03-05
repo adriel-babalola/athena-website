@@ -4,17 +4,17 @@ const steps = [
   {
     num: '01',
     title: 'Paste your confusion',
-    desc: 'Drop in any text, formula, or screenshot that you don\'t understand.',
+    desc: 'Drop in any text, formula, equation, or screenshot — whatever you\'re stuck on.',
   },
   {
     num: '02',
     title: 'Athena analyzes it',
-    desc: 'Gemini AI identifies key concepts, difficulty level, and optimal search queries.',
+    desc: 'Gemini AI breaks down the concept, generates targeted search queries, and scours YouTube.',
   },
   {
     num: '03',
     title: 'Get curated videos',
-    desc: 'Verified YouTube videos ranked by difficulty — beginner to advanced.',
+    desc: 'Verified, relevant videos ranked from beginner to advanced — ready in seconds.',
   },
 ];
 

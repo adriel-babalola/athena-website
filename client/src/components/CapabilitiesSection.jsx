@@ -1,36 +1,36 @@
 import { motion } from 'motion/react';
-import { Brain, Zap, Search, Layers, Shield, Clock } from 'lucide-react';
+import { Brain, Zap, Search, Layers, Shield, ImageIcon } from 'lucide-react';
 
 const capabilities = [
   {
     icon: Brain,
-    title: 'AI-Powered Analysis',
-    desc: 'Gemini AI understands context and identifies exactly what you need to learn.',
+    title: 'Deep Concept Analysis',
+    desc: 'Gemini AI dissects your input, identifies the core concepts, and generates targeted search queries.',
   },
   {
     icon: Search,
     title: 'Smart Video Curation',
-    desc: 'Searches millions of YouTube videos to find the most relevant explanations.',
+    desc: 'Searches YouTube and surfaces the most relevant, high-quality explanations — not just the most popular.',
   },
   {
     icon: Layers,
     title: 'Difficulty Ranking',
-    desc: 'Videos ranked from beginner to advanced so you learn at your own pace.',
+    desc: 'Results are ranked beginner to advanced so you always find a video pitched at your level.',
   },
   {
     icon: Zap,
-    title: 'Instant Results',
-    desc: 'Get curated video results in seconds, not hours of manual searching.',
+    title: 'Results in Seconds',
+    desc: 'From paste to curated video list in under 10 seconds. No more wasting 20 minutes searching yourself.',
   },
   {
     icon: Shield,
-    title: 'Verified Quality',
-    desc: 'AI verifies each video actually teaches the specific topic you need.',
+    title: 'Relevance Verification',
+    desc: 'Every video is checked by AI to confirm it actually teaches the exact topic you pasted.',
   },
   {
-    icon: Clock,
-    title: 'Image Support',
-    desc: 'Paste screenshots, photos of textbooks, or handwritten notes directly.',
+    icon: ImageIcon,
+    title: 'Image & Screenshot Support',
+    desc: 'Paste a screenshot, photo of your textbook, or handwritten notes — Athena reads it all.',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function CapabilitiesSection() {
             CAPABILITIES
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-light">
-            Built for <span className="text-athena-purple italic">deep learning.</span>
+            Everything you need to <span className="text-athena-purple italic">actually understand.</span>
           </h2>
         </motion.div>
 
