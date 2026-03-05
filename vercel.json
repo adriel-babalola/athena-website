@@ -1,5 +1,33 @@
 {
   "buildCommand": "npm run build",
   "installCommand": "cd client && npm install",
-  "outputDirectory": "client/dist"
+  "outputDirectory": "client/dist",
+  "envPrefix": "REACT_",
+  "framework": "vite",
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    },
+    {
+      "source": "/assets/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
 }
