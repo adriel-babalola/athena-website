@@ -2,7 +2,6 @@
   "buildCommand": "npm run build",
   "installCommand": "cd client && npm install",
   "outputDirectory": "client/dist",
-  "envPrefix": "REACT_",
   "framework": "vite",
   "headers": [
     {
