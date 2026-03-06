@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -52,18 +51,16 @@ export default function PricingSection() {
   const plans = [
     {
       name: 'FREE',
-      price: '$0',
-      period: 'forever',
+      price: userCountry === 'NG' ? '₦0' : '$0',
+      period: 'free 1st month',
       desc: 'Everything you need to start learning smarter.',
       features: [
         '10 analyses per day',
         'Image & screenshot support',
         'AI-curated video results',
         'Beginner-to-advanced ranking',
-        'Save videos for later',
-        'Full query history',
       ],
-      cta: 'GET STARTED',
+      cta: 'EXPLORE',
       highlight: false,
     },
     {
@@ -78,8 +75,10 @@ export default function PricingSection() {
         'Priority AI processing',
         'Advanced study tools',
         'Export study plans',
+        'Save videos for later',
+        'Full query history',
       ],
-      cta: 'COMING SOON',
+      cta: 'GET STARTED',
       highlight: true,
     },
     {
@@ -166,12 +165,14 @@ export default function PricingSection() {
                   {plan.cta}
                 </button>
               ) : (
-                <Link
-                  to="/signup"
-                  className="block w-full py-3 bg-athena-purple text-white font-mono text-xs uppercase tracking-widest text-center hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300"
+                <a
+                  href="https://app.tryathena.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 bg-athena-purple text-white font-mono text-xs uppercase tracking-widest text-center hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 cursor-pointer"
                 >
                   {plan.cta}
-                </Link>
+                </a>
               )}
             </motion.div>
           ))}

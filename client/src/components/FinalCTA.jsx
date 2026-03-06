@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 
 export default function FinalCTA() {
   return (
@@ -23,13 +22,15 @@ export default function FinalCTA() {
           Paste what confuses you. Get the exact videos that explain it. Free, no credit card.
         </p>
 
-        <Link
-          to="/signup"
-          className="inline-block bg-athena-purple text-white font-mono text-sm uppercase tracking-widest px-10 py-4 hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 group relative overflow-hidden"
+        <a
+          href="https://app.tryathena.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-athena-purple text-white font-mono text-sm uppercase tracking-widest px-10 py-4 hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 group relative overflow-hidden cursor-pointer"
         >
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
           <span className="relative z-10">START LEARNING FREE</span>
-        </Link>
+        </a>
       </motion.div>
     </section>
   );

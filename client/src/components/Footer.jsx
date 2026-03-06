@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function Footer() {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
@@ -50,14 +48,14 @@ export default function Footer() {
             <h4 className="font-mono text-[10px] tracking-widest uppercase text-athena-offwhite/50 mb-4">Product</h4>
             <ul className="space-y-3 font-mono text-xs text-athena-offwhite/30">
               <li>
-                <Link to="/signup" className="hover:text-athena-purple transition-colors">
+                <a href="https://app.tryathena.app/" target="_blank" rel="noopener noreferrer" className="hover:text-athena-purple transition-colors cursor-pointer">
                   Sign Up
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/login" className="hover:text-athena-purple transition-colors">
+                <a href="https://app.tryathena.app/" target="_blank" rel="noopener noreferrer" className="hover:text-athena-purple transition-colors cursor-pointer">
                   Log In
-                </Link>
+                </a>
               </li>
               <li>
                 <span className="text-athena-offwhite/15">API (Coming Soon)</span>

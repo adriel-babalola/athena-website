@@ -55,22 +55,26 @@ export default function Navbar() {
             ACCESS
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-athena-purple transition-all group-hover:w-full" />
           </button>
-          <Link
-            to="/login"
-            className="px-5 py-2 border border-athena-purple/40 text-athena-purple hover:bg-athena-purple hover:text-white transition-all duration-300 tracking-widest"
+          <a
+            href="https://app.tryathena.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 border border-athena-purple/40 text-athena-purple hover:bg-athena-purple hover:text-white transition-all duration-300 tracking-widest cursor-pointer"
           >
             LOGIN
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile */}
         <div className="flex md:hidden items-center gap-4">
-          <Link
-            to="/login"
-            className="px-3 py-1.5 border border-athena-purple/40 text-athena-purple font-mono text-[10px] hover:bg-athena-purple hover:text-white transition-all"
+          <a
+            href="https://app.tryathena.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-1.5 border border-athena-purple/40 text-athena-purple font-mono text-[10px] hover:bg-athena-purple hover:text-white transition-all cursor-pointer"
           >
             LOGIN
-          </Link>
+          </a>
         </div>
       </div>
     </header>
