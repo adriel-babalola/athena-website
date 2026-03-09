@@ -20,24 +20,24 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-32 px-6 border-t border-athena-border">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 border-t border-athena-border">
+      <div className="max-w-5xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
           <div className="font-mono text-[10px] uppercase tracking-widest text-athena-purple mb-4">
             SIGNAL
           </div>
-          <h2 className="text-3xl sm:text-4xl font-light">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
             What students are <span className="text-athena-purple italic">saying.</span>
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
@@ -45,9 +45,9 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="border border-athena-border p-6 hover:border-athena-purple/20 transition-colors"
+              className="border border-athena-border p-4 sm:p-5 md:p-6 hover:border-athena-purple/20 transition-colors"
             >
-              <p className="text-athena-offwhite/70 text-sm leading-relaxed mb-6 italic">
+              <p className="text-athena-offwhite/70 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 italic">
                 "{t.quote}"
               </p>
               <div>

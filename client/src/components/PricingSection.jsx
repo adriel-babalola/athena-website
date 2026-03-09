@@ -40,12 +40,12 @@ export default function PricingSection() {
 
   const pricing = userCountry === 'NG'
     ? [
-        { name: 'Student', price: '₦3,500', usd: '~$2.10' },
-        { name: 'Pro', price: '₦7,000', usd: '~$4.20' }
+        { name: 'Student', price: '₦700', usd: '~$0.42' },
+        { name: 'Pro', price: '₦1,000', usd: '~$0.60' }
       ]
     : [
-        { name: 'Student', price: '$5', usd: '$5' },
-        { name: 'Pro', price: '$10-15', usd: '$10-15' }
+        { name: 'Student', price: '$1', usd: '$1' },
+        { name: 'Pro', price: '$1.50', usd: '$1.50' }
       ];
 
   const plans = [
@@ -100,27 +100,27 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="access" className="py-32 px-6 relative border-t border-athena-border">
-      <div className="max-w-4xl mx-auto">
+    <section id="access" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative border-t border-athena-border">
+      <div className="max-w-4xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
           <div className="font-mono text-[10px] uppercase tracking-widest text-athena-purple mb-4">
             ACCESS
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light mb-3 sm:mb-4">
             Start for <span className="text-athena-purple italic">free.</span>
           </h2>
-          <p className="text-athena-offwhite/40 text-lg max-w-md mx-auto">
+          <p className="text-athena-offwhite/40 text-sm sm:text-base md:text-lg max-w-md mx-auto">
             No credit card required. Full features from day one.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -128,7 +128,7 @@ export default function PricingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className={`border p-8 relative ${
+              className={`border p-4 sm:p-6 md:p-8 relative ${
                 plan.highlight
                   ? 'border-athena-purple/40 bg-athena-purple/[0.03]'
                   : 'border-athena-border'
@@ -138,19 +138,19 @@ export default function PricingSection() {
                 <div className="absolute -top-px left-0 right-0 h-0.5 bg-athena-purple" />
               )}
 
-              <div className="font-mono text-[10px] tracking-widest text-athena-purple mb-4">{plan.name}</div>
-              <div className="flex items-end gap-1 mb-2">
-                <span className="text-4xl font-light text-athena-offwhite">{plan.price}</span>
+              <div className="font-mono text-[10px] tracking-widest text-athena-purple mb-2 sm:mb-4">{plan.name}</div>
+              <div className="flex items-end gap-1 mb-1 sm:mb-2">
+                <span className="text-3xl sm:text-4xl font-light text-athena-offwhite">{plan.price}</span>
                 <span className="text-athena-offwhite/30 font-mono text-xs mb-1">{plan.period}</span>
               </div>
-              {plan.usd && (
+              {plan.usd && userCountry !== 'NG' && (
                 <div className="text-athena-offwhite/50 font-mono text-xs mb-4">{plan.usd}</div>
               )}
-              <p className="text-athena-offwhite/40 text-sm mb-8">{plan.desc}</p>
+              <p className="text-athena-offwhite/40 text-xs sm:text-sm mb-6 sm:mb-8">{plan.desc}</p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                 {plan.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-3 text-sm text-athena-offwhite/70">
+                  <li key={j} className="flex items-center gap-3 text-xs sm:text-sm text-athena-offwhite/70">
                     <Check className="w-4 h-4 text-athena-purple shrink-0" />
                     {f}
                   </li>
@@ -165,14 +165,12 @@ export default function PricingSection() {
                   {plan.cta}
                 </button>
               ) : (
-                <a
-                  href="https://app.tryathena.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-3 bg-athena-purple text-white font-mono text-xs uppercase tracking-widest text-center hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 cursor-pointer"
+                <button
+                  disabled
+                  className="block w-full py-3 bg-athena-purple/40 text-white/50 font-mono text-xs uppercase tracking-widest text-center cursor-not-allowed transition-all duration-300"
                 >
                   {plan.cta}
-                </a>
+                </button>
               )}
             </motion.div>
           ))}

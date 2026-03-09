@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <>
       {/* ── FOLD 1: Stop searching. Start understanding. ── */}
-      <section className="min-h-screen flex flex-col items-center justify-center relative px-6">
+      <section className="min-h-screen flex flex-col items-center justify-center relative px-4 sm:px-6">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-athena-purple/[0.04] via-transparent to-transparent pointer-events-none" />
 
@@ -20,7 +20,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center relative z-10"
         >
-          <h1 className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl font-light leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light leading-tight tracking-tight">
             Stop searching.
             <br />
             <span className="text-athena-purple italic">Start understanding.</span>
@@ -34,7 +34,7 @@ export default function HeroSection() {
           >
             <button
               onClick={() => scrollTo('capabilities')}
-              className="px-10 py-4 border border-athena-purple/40 text-athena-purple font-mono text-sm uppercase tracking-widest hover:bg-athena-purple hover:text-white transition-all duration-300 group"
+              className="px-6 sm:px-10 py-3 sm:py-4 border border-athena-purple/40 text-athena-purple font-mono text-xs sm:text-sm uppercase tracking-widest hover:bg-athena-purple hover:text-white transition-all duration-300 group"
             >
               START LEARNING — IT'S FREE
             </button>
@@ -53,8 +53,8 @@ export default function HeroSection() {
       </section>
 
       {/* ── FOLD 2: Understand anything. Instantly. ── */}
-      <section id="capabilities" className="min-h-screen flex items-center relative px-6 py-24">
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section id="capabilities" className="min-h-screen flex items-center relative px-4 sm:px-6 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left: Copy */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -70,34 +70,33 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-light leading-tight mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-light leading-tight mb-4 sm:mb-6">
               Understand
               <br />
               <span className="text-athena-purple italic">anything.</span>{' '}
               Instantly.
             </h2>
 
-            <p className="text-athena-offwhite/40 text-lg max-w-lg mb-10 leading-relaxed">
+            <p className="text-athena-offwhite/40 text-sm sm:text-base md:text-lg max-w-lg mb-6 sm:mb-10 leading-relaxed">
               Paste any confusing text, formula, or screenshot —
               <br />
               Athena finds the exact YouTube videos that explain it,
               <br />
-              ranked from beginner to advanced.{' '}
-              <span className="text-athena-offwhite/70 font-medium">Powered by Gemini AI.</span>
+              ranked from beginner to advanced.
+              <br />
+              <span className="text-athena-offwhite/70 font-medium">Trusted by FUT Minna, ABU, and LASU students.</span>
             </p>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                to="/signup"
-                className="inline-flex items-center gap-2 bg-athena-purple text-white font-mono text-sm uppercase tracking-widest px-8 py-4 hover:shadow-[0_0_30px_rgba(124,111,255,0.4)] transition-all duration-300 group relative overflow-hidden"
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4">
+              <button
+                disabled
+                className="inline-flex items-center gap-2 bg-athena-purple/40 text-white/50 font-mono text-xs sm:text-sm uppercase tracking-widest px-6 sm:px-8 py-3 sm:py-4 cursor-not-allowed transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-center justify-center sm:justify-start"
               >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-                <span className="relative z-10">GET STARTED FREE</span>
-                <span className="relative z-10">→</span>
-              </Link>
+                <span className="relative z-10">COMING SOON</span>
+              </button>
               <button
                 onClick={() => scrollTo('protocol')}
-                className="inline-flex items-center gap-2 font-mono text-sm uppercase tracking-widest text-athena-offwhite/60 hover:text-athena-purple transition-colors bg-transparent border-none cursor-pointer"
+                className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm uppercase tracking-widest text-athena-offwhite/60 hover:text-athena-purple transition-colors bg-transparent border-none cursor-pointer w-full sm:w-auto justify-center sm:justify-start"
               >
                 <span className="w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[8px] border-l-athena-purple" />
                 VIEW DEMO

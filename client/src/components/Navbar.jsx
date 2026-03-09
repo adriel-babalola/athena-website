@@ -23,7 +23,7 @@ export default function Navbar() {
           : 'border-transparent bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <img src="/logo.svg" alt="Athena" className="h-7 w-auto" />
@@ -55,26 +55,22 @@ export default function Navbar() {
             ACCESS
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-athena-purple transition-all group-hover:w-full" />
           </button>
-          <a
-            href="https://app.tryathena.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 border border-athena-purple/40 text-athena-purple hover:bg-athena-purple hover:text-white transition-all duration-300 tracking-widest cursor-pointer"
+          <button
+            disabled
+            className="px-5 py-2 border border-athena-purple/20 text-athena-purple/50 cursor-not-allowed transition-all duration-300 tracking-widest font-mono text-xs"
           >
-            LOGIN
-          </a>
+            LOGIN (COMING SOON)
+          </button>
         </nav>
 
         {/* Mobile */}
         <div className="flex md:hidden items-center gap-4">
-          <a
-            href="https://app.tryathena.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-1.5 border border-athena-purple/40 text-athena-purple font-mono text-[10px] hover:bg-athena-purple hover:text-white transition-all cursor-pointer"
+          <button
+            disabled
+            className="px-3 py-1.5 border border-athena-purple/20 text-athena-purple/50 font-mono text-[10px] cursor-not-allowed transition-all"
           >
-            LOGIN
-          </a>
+            COMING SOON
+          </button>
         </div>
       </div>
     </header>
