@@ -55,6 +55,13 @@ export default function Navbar() {
             ACCESS
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-athena-purple transition-all group-hover:w-full" />
           </button>
+          <a
+            href="https://app.tryathena.app/sign-up"
+            disabled
+            className="px-5 py-2 border border-athena-purple/20 text-athena-purple/50 cursor-not-allowed opacity-50 transition-all duration-300 tracking-widest font-mono text-xs no-underline"
+          >
+            SIGN UP
+          </a>
           <button
             disabled
             className="px-5 py-2 border border-athena-purple/20 text-athena-purple/50 cursor-not-allowed transition-all duration-300 tracking-widest font-mono text-xs"
