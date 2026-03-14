@@ -36,7 +36,7 @@ export default function HeroSection() {
               onClick={() => scrollTo('capabilities')}
               className="px-6 sm:px-10 py-3 sm:py-4 border border-athena-purple/40 text-athena-purple font-mono text-xs sm:text-sm uppercase tracking-widest hover:bg-athena-purple hover:text-white transition-all duration-300 group"
             >
-              START LEARNING — IT'S FREE
+              START LEARNING
             </button>
           </motion.div>
         </motion.div>
