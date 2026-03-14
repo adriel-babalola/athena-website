@@ -88,19 +88,21 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4">
-              <button
-                disabled
-                className="inline-flex items-center gap-2 bg-athena-purple/40 text-white/50 font-mono text-xs sm:text-sm uppercase tracking-widest px-6 sm:px-8 py-3 sm:py-4 cursor-not-allowed transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-center justify-center sm:justify-start"
+              <a
+                href="https://app.tryathena.app/sign-up"
+                className="inline-flex items-center gap-2 bg-athena-purple text-white font-mono text-xs sm:text-sm uppercase tracking-widest px-6 sm:px-8 py-3 sm:py-4 cursor-pointer hover:bg-athena-purple/80 transition-all duration-300 relative overflow-hidden w-full sm:w-auto text-center justify-center sm:justify-start no-underline"
               >
-                <span className="relative z-10">COMING SOON</span>
-              </button>
-              <button
-                onClick={() => scrollTo('protocol')}
-                className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm uppercase tracking-widest text-athena-offwhite/60 hover:text-athena-purple transition-colors bg-transparent border-none cursor-pointer w-full sm:w-auto justify-center sm:justify-start"
+                <span className="relative z-10">GET STARTED</span>
+              </a>
+              <a
+                href="https://youtu.be/qfag97RW9Jo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm uppercase tracking-widest text-athena-offwhite/60 hover:text-athena-purple transition-colors bg-transparent border-none cursor-pointer w-full sm:w-auto justify-center sm:justify-start no-underline"
               >
                 <span className="w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[8px] border-l-athena-purple" />
                 VIEW DEMO
-              </button>
+              </a>
             </div>
           </motion.div>
 

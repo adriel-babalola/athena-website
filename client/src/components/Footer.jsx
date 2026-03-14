@@ -48,10 +48,10 @@ export default function Footer() {
             <h4 className="font-mono text-[10px] tracking-widest uppercase text-athena-offwhite/50 mb-3 sm:mb-4">Product</h4>
             <ul className="space-y-2 sm:space-y-3 font-mono text-[10px] sm:text-xs text-athena-offwhite/30">
               <li>
-                <span className="text-athena-offwhite/15">Sign Up (Coming Soon)</span>
+                <a href="https://app.tryathena.app/sign-up" className="hover:text-athena-purple transition-colors no-underline">Sign Up</a>
               </li>
               <li>
-                <span className="text-athena-offwhite/15">Log In (Coming Soon)</span>
+                <a href="https://app.tryathena.app/login" className="hover:text-athena-purple transition-colors no-underline">Log In</a>
               </li>
               <li>
                 <span className="text-athena-offwhite/15">API (Coming Soon)</span>

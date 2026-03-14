@@ -40,18 +40,18 @@ export default function PricingSection() {
 
   const pricing = userCountry === 'NG'
     ? [
-        { name: 'Student', price: '₦700', usd: '~$0.42' },
-        { name: 'Pro', price: '₦1,000', usd: '~$0.60' }
+        { name: 'Student', price: '***', usd: '***' },
+        { name: 'Pro', price: '***', usd: '***' }
       ]
     : [
-        { name: 'Student', price: '$1', usd: '$1' },
-        { name: 'Pro', price: '$1.50', usd: '$1.50' }
+        { name: 'Student', price: '***', usd: '***' },
+        { name: 'Pro', price: '***', usd: '***' }
       ];
 
   const plans = [
     {
       name: 'FREE',
-      price: userCountry === 'NG' ? '₦0' : '$0',
+      price: '***',
       period: 'free 1st month',
       desc: 'Everything you need to start learning smarter.',
       features: [
@@ -158,19 +158,19 @@ export default function PricingSection() {
               </ul>
 
               {plan.highlight ? (
-                <button
-                  disabled
-                  className="w-full py-3 border border-athena-border text-athena-offwhite/30 font-mono text-xs uppercase tracking-widest cursor-not-allowed"
+                <a
+                  href="https://app.tryathena.app/sign-up"
+                  className="block w-full py-3 border border-athena-purple bg-athena-purple/10 text-athena-purple font-mono text-xs uppercase tracking-widest cursor-pointer hover:bg-athena-purple hover:text-white transition-all duration-300 text-center no-underline"
                 >
                   {plan.cta}
-                </button>
+                </a>
               ) : (
-                <button
-                  disabled
-                  className="block w-full py-3 bg-athena-purple/40 text-white/50 font-mono text-xs uppercase tracking-widest text-center cursor-not-allowed transition-all duration-300"
+                <a
+                  href="https://app.tryathena.app/sign-up"
+                  className="block w-full py-3 bg-athena-purple text-white font-mono text-xs uppercase tracking-widest text-center cursor-pointer hover:bg-athena-purple/80 transition-all duration-300 no-underline"
                 >
                   {plan.cta}
-                </button>
+                </a>
               )}
             </motion.div>
           ))}

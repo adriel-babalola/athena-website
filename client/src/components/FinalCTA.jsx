@@ -22,12 +22,12 @@ export default function FinalCTA() {
           Paste what confuses you. Get the exact videos that explain it. Free, no credit card.
         </p>
 
-        <button
-          disabled
-          className="inline-block bg-athena-purple/40 text-white/50 font-mono text-xs sm:text-sm uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4 cursor-not-allowed transition-all duration-300 relative overflow-hidden"
+        <a
+          href="https://app.tryathena.app/sign-up"
+          className="inline-block bg-athena-purple text-white font-mono text-xs sm:text-sm uppercase tracking-widest px-6 sm:px-10 py-3 sm:py-4 cursor-pointer hover:bg-athena-purple/80 transition-all duration-300 relative overflow-hidden no-underline"
         >
-          <span className="relative z-10">LAUNCHING SOON</span>
-        </button>
+          <span className="relative z-10">GET STARTED FREE</span>
+        </a>
       </motion.div>
     </section>
   );

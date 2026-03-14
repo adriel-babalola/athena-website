@@ -57,27 +57,26 @@ export default function Navbar() {
           </button>
           <a
             href="https://app.tryathena.app/sign-up"
-            disabled
-            className="px-5 py-2 border border-athena-purple/20 text-athena-purple/50 cursor-not-allowed opacity-50 transition-all duration-300 tracking-widest font-mono text-xs no-underline"
+            className="px-5 py-2 border border-athena-purple/20 text-athena-purple hover:bg-athena-purple hover:text-white cursor-pointer transition-all duration-300 tracking-widest font-mono text-xs no-underline"
           >
             SIGN UP
           </a>
-          <button
-            disabled
-            className="px-5 py-2 border border-athena-purple/20 text-athena-purple/50 cursor-not-allowed transition-all duration-300 tracking-widest font-mono text-xs"
+          <a
+            href="https://app.tryathena.app/login"
+            className="px-5 py-2 border border-athena-purple/20 text-athena-purple hover:bg-athena-purple hover:text-white cursor-pointer transition-all duration-300 tracking-widest font-mono text-xs no-underline"
           >
-            LOGIN (COMING SOON)
-          </button>
+            LOGIN
+          </a>
         </nav>
 
         {/* Mobile */}
         <div className="flex md:hidden items-center gap-4">
-          <button
-            disabled
-            className="px-3 py-1.5 border border-athena-purple/20 text-athena-purple/50 font-mono text-[10px] cursor-not-allowed transition-all"
+          <a
+            href="https://app.tryathena.app/sign-up"
+            className="px-3 py-1.5 border border-athena-purple/20 text-athena-purple font-mono text-[10px] cursor-pointer hover:bg-athena-purple hover:text-white transition-all no-underline"
           >
-            COMING SOON
-          </button>
+            SIGN UP
+          </a>
         </div>
       </div>
     </header>
